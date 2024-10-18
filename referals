@@ -184,8 +184,8 @@
     </div>
 
     <div class="bottom-nav">
-        <img src="https://i.imgur.com/PEXKBxU.png" alt="Играть"
-            onclick="window.location.href='bober-tap.netlify.app/';">
+        <img src="https://img.icons8.com/fluency/48/000000/bitcoin.png" alt="Биржа"
+            onclick="window.location.href='index.html';">
         <img src="https://img.icons8.com/fluency/48/000000/gold-bars.png" alt="AirDrop"
             onclick="window.location.href='index.html';">
         <img src="https://img.icons8.com/fluency/48/000000/user-male.png" alt="Друзья"
