@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bober-Tap - Друзья</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            border-bottom: 1px solid #333;
+        }
+
+        .top-bar .title {
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar .back-button {
+            font-size: 16px;
+            font-weight: bold;
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        .content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            /* Заставляет дочерние элементы занимать всю ширину */
+        }
+
+        .invite-section {
+            margin-bottom: 20px;
+        }
+
+        .invite-section h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .invite-button {
+            background-color: #444;
+            border: none;
+            color: white;
+            padding: 15px;
+            /* Установлен стандартный паддинг */
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 100%;
+            /* Ширина кнопки на 100% */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            height: 60px;
+            /* Высота кнопки для соответствия изображению */
+            transition: background-color 0.3s;
+            /* Плавный переход цвета */
+        }
+
+        .invite-button:hover {
+            background-color: #555;
+            /* Цвет при наведении */
+        }
+
+        .reward {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            /* Увеличен размер текста */
+        }
+
+        .friends-list {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .friends-list h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+
+        .friend-item {
+            padding: 10px;
+            background-color: #444;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .no-friends {
+            text-align: center;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #292929;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .bottom-nav img {
+            width: 24px;
+            cursor: pointer;
+        }
+
+        .reward img {
+            width: 20px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="back-button" onclick="window.location.href='index.html';">Назад</div>
+        <div class="title">Пригласите друзей!</div>
+    </div>
+
+    <div class="content">
+        <div class="invite-section">
+            <h2>Вы и ваш друг получите бонусы</h2>
+
+            <button class="invite-button">
+                Пригласить друга
+                <div class="reward">
+                    <img src="https://i.imgur.com/SgGzlO1.png" alt="Кристалл"> +0.1 для вас и вашего друга
+                </div>
+            </button>
+
+            <button class="invite-button">
+                Пригласить друга с Telegram Premium
+                <div class="reward">
+                    <img src="https://i.imgur.com/SgGzlO1.png" alt="Кристалл"> +0.3 для вас и вашего друга
+                </div>
+            </button>
+        </div>
+
+        <div class="friends-list">
+            <h2>Список ваших друзей (3)</h2>
+            <div class="friend-item">Друг 1</div>
+            <div class="friend-item">Друг 2</div>
+            <div class="friend-item">Друг 3</div>
+        </div>
+
+        <button class="invite-button">
+            <img src="https://i.imgur.com/6sE9g9k.png" alt="Invite Icon">
+            Пригласить друга
+        </button>
+    </div>
+
+    <div class="bottom-nav">
+        <img src="https://i.imgur.com/PEXKBxU.png" alt="Играть"
+            onclick="window.location.href='bober-tap.netlify.app/';">
+        <img src="https://img.icons8.com/fluency/48/000000/gold-bars.png" alt="AirDrop"
+            onclick="window.location.href='index.html';">
+        <img src="https://img.icons8.com/fluency/48/000000/user-male.png" alt="Друзья"
+            onclick="window.location.href='friends.html';">
+        <img src="https://img.icons8.com/fluency/48/000000/task.png" alt="Задания"
+            onclick="window.location.href='index.html';">
+        <img src="https://img.icons8.com/fluency/48/000000/star.png" alt="Рейтинг"
+            onclick="window.location.href='index.html';">
+    </div>
+
+</body>
+
+</html>
